@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">学生考勤</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="getClassId">/class/getClassInfoId/</string>
+    <string name="getClassAll">/class/getClassInfoAll/</string>
+    <string name="getStudentId">/student/getStudentInfoId/</string>
+    <string name="selectClockInfo">/clock/selectClockInfo</string>
+    <string name="selectCourseInfoId">/course/selectCourseInfoId/</string>
+    <string name="selectCourseInfoClassId">/course/selectCourseInfoClassId/</string>
+    <string name="selectCourseInfoClass">/course/selectCourseInfoClass/</string>
+    <string name="selectTeacherInfoTeacherId">/teacher/selectTeacherInfoTeacherId/</string>
+    <string name="getIP">http://192.168.0.158:8081</string>
+    <!--    <string name="getIP">http://192.168.2.16:8081</string>-->
+    <string name="insertSignIfo">/sign/insertSignInfo/</string>
+    <string name="selectSignInfoStudent">/sign/selectInfoSignStudentId/</string>
+
+    <string name="permission_tip">提示</string>
+    <string name="permission_msg">申请权限失败! \n
+            你可以在设置界面中点击"权限"手动进行控制</string>
+    <string name="permission_btn_setting">去设置界面</string>
+    <string name="permission_btn_quit">退出</string>
+    <string name="clock_str">签到</string>
+    <string name="statistics_str">统计</string>
+    <string name="my_str">我的</string>
+</resources>

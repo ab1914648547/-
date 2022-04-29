@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".activitys.ApplyForActivity">
+
+    <TextView
+        android:id="@+id/banner_apply_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/res60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="请假申请"
+        android:textColor="@color/black"
+        android:textSize="@dimen/res30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/res20dp"
+        android:layout_below="@+id/banner_apply_banner"
+        android:layout_marginTop="@dimen/res10dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/res5dp"
+            android:layout_marginTop="@dimen/res5dp"
+            android:layout_marginEnd="@dimen/res5dp"
+            android:layout_marginBottom="@dimen/res5dp"
+            android:background="@drawable/body_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="姓名："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/res20dp" />
+
+                <TextView
+                    android:id="@+id/student_name"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/res10dp"
+                android:layout_marginEnd="@dimen/res10dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="班级："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/res20dp" />
+
+                <TextView
+                    android:id="@+id/student_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/res10dp"
+                android:layout_marginEnd="@dimen/res10dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="课程："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/res20dp" />
+
+                <Spinner
+                    android:id="@+id/student_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/res10dp"
+                android:layout_marginEnd="@dimen/res10dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="请假类型："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/res20dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_vacate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/res10dp"
+                android:layout_marginEnd="@dimen/res10dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="任课老师："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/res20dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_teacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/res10dp"
+                android:layout_marginEnd="@dimen/res10dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="请假理由"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/res20dp" />
+
+                <EditText
+                    android:id="@+id/vacate_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:layout_margin="@dimen/res5dp"
+                    android:background="@drawable/apply_shape"
+                    android:gravity="top"
+                    android:paddingStart="@dimen/res10dp"
+                    android:paddingTop="@dimen/res10dp"
+                    android:lines="5"
+                    android:singleLine="false" />
+
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/submit_apply"
+                    android:layout_width="@dimen/res150dp"
+                    android:layout_height="@dimen/res40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/res20dp"
+                    android:background="@drawable/clock_btn_shape"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:layout_marginBottom="@dimen/res10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/res20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

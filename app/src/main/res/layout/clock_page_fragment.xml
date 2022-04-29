@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/banner_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/res70dp"
+        android:padding="@dimen/res10dp"
+        android:background="@drawable/banner_shape"
+        android:layout_marginTop="@dimen/res10dp"
+        android:layout_marginRight="@dimen/res5dp"
+        android:layout_marginLeft="@dimen/res5dp">
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_width="@dimen/res50dp"
+            android:layout_height="@dimen/res50dp"
+            android:background="@mipmap/ic_girl_icon_foreground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/user_head"
+            android:paddingLeft="@dimen/res10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clock_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/res20dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_weight="20"
+                android:text="XX"/>
+            <TextView
+                android:id="@+id/student_note"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/res15dp"
+                android:layout_weight="15"
+                android:text="个人介绍"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/apply_for"
+            android:layout_width="@dimen/res40dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/res40dp"
+            android:src="@drawable/ic_apply_icon"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/banner_show"
+        android:layout_marginLeft="@dimen/res5dp"
+        android:layout_marginTop="@dimen/res10dp"
+        android:layout_marginRight="@dimen/res5dp"
+        android:layout_marginBottom="@dimen/res10dp"
+        android:background="@drawable/body_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/res70dp"
+            android:layout_marginLeft="@dimen/res10dp"
+            android:layout_marginTop="@dimen/res10dp"
+            android:layout_marginRight="@dimen/res10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res70dp"
+                android:layout_marginLeft="@dimen/res5dp"
+                android:layout_marginRight="@dimen/res5dp"
+                android:layout_weight="1"
+                android:background="@drawable/tabs_shape"
+                android:orientation="vertical"
+                android:padding="@dimen/res10dp">
+
+                <TextView
+                    android:id="@+id/banner_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="没有课程"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="@dimen/res20dp" />
+
+                <TextView
+                    android:id="@+id/banner_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="无"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/res15dp" />
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/res70dp"-->
+<!--                android:layout_marginLeft="@dimen/res5dp"-->
+<!--                android:layout_marginRight="@dimen/res5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/tabs_shape"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/res10dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="下课时间"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/res20dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:text="10:10"-->
+<!--                    android:textColor="#736D6D"-->
+<!--                    android:textSize="@dimen/res15dp" />-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/clock_this"
+            android:layout_width="@dimen/res150dp"
+            android:layout_height="@dimen/res150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/clock_btn_shape">
+
+            <LinearLayout
+                android:layout_width="@dimen/res100dp"
+                android:layout_height="@dimen/res70dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:padding="@dimen/res5dp">
+
+                <TextView
+                    android:id="@+id/clock_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="打卡上课"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/res20dp"
+                    tools:ignore="SpUsage" />
+
+                <TextView
+                    android:id="@+id/clock_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12:00:10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/res15dp"
+                    tools:ignore="SpUsage" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/res50dp"
+            android:layout_below="@+id/clock_this"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/res10dp"
+            android:layout_marginTop="@dimen/res10dp"
+            android:layout_marginRight="@dimen/res10dp"
+            android:gravity="center"
+            android:lines="1"
+            android:text="未获取到位置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/res20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/res10dp"
+            android:layout_marginRight="@dimen/res10dp"
+            android:layout_marginBottom="@dimen/res50dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/res30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/res10dp"
+            android:gravity="center"
+            android:text="考勤打卡系统" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

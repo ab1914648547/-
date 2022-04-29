@@ -1,0 +1,52 @@
+// Json串转换为List集合对象
+String url = getString(R.string.getIP) +getString(R.string.getClassAll);
+String sync = OkHttpUtils.builder().url(url)
+        .addHeader("Content-Type", "application/json; charset=utf-8")
+        .get()
+        .sync();
+Gson gson = new Gson();
+String s = gson.toJson(sync);
+List<ClassInformation> classList = JSONArray.parseArray(sync,ClassInformation.class);
+for (ClassInformation aaa:classList) {
+
+    Log.e(TAG, "onCreateView: "+ aaa );
+
+}
+
+// Json转换为单个对象
+demoObj = gson.fromJson(sync,DemoObj.class);
+
+
+
+    //发送实体对象到SpringBoot接口中
+    Signinformation signinformation = new Signinformation();
+
+    signinformation.setSignSite("签到");
+    signinformation.setSignMessage("在某一个地方签到");
+    signinformation.setSignTime("8:20");
+    signinformation.setSignOut("9:20");
+    Gson gson = new Gson();
+    //将实体对象转换为json数据
+    String s = gson.toJson(signinformation);
+    String url = getString(R.string.getIP) + getString(R.string.insertSignIfo);
+
+    MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
+    RequestBody requestBody = RequestBody.create(mediaType, s);
+    Request request = new Request.Builder()
+            .url(url)
+            .post(requestBody)
+            .build();
+    Response response = client.newCall(request).execute();
+
+    //成功后处理
+    if (response.isSuccessful()){
+        String string = response.body().string();
+        Log.e(TAG, "instertSignData: " + string );
+    }
+
+    //将字符串时间 转换为 date类型
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    Date parse = dateFormat.parse(object.getClockTime());
+
+     //去除重复的元素
+    List<String> teacherNamesDrop = teacherNames.stream().distinct().collect(Collectors.toList());

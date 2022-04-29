@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".activitys.MessageActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <org.develop.attendancesystem.utility.CircleImageView
+                android:id="@+id/log_icon"
+                android:layout_width="@dimen/res80dp"
+                android:layout_height="@dimen/res80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/res30dp"
+                android:src="@mipmap/ic_girl_icon_foreground"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/res10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:text="姓名"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/res20dp"
+                    android:paddingLeft="@dimen/res10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/student_name"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="@dimen/res10dp"
+                    android:layout_weight="1"
+                    android:text="XXX"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/res10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/res60dp"
+                    android:text="性别"
+                    android:textColor="@color/black"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/res20dp"
+                    android:paddingLeft="@dimen/res10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/student_sex"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="@dimen/res10dp"
+                    android:text="X"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/res10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/res60dp"
+                    android:text="年龄"
+                    android:layout_weight="6"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/res20dp"
+                    android:paddingLeft="@dimen/res10dp"/>
+
+                <TextView
+                    android:id="@+id/student_age"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/res10dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"
+                    android:layout_height="match_parent"/>
+
+
+                </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/res10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/res60dp"
+                    android:text="家庭地址"
+                    android:layout_weight="4"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/res20dp"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/res10dp"
+                    tools:ignore="RtlSymmetry,SpUsage" />
+
+                <TextView
+                    android:id="@+id/student_home"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginEnd="@dimen/res10dp"
+                    android:text="地址"
+                    android:lines="2"
+                    android:gravity="end|center"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/res10dp"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/res10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/res60dp"
+                    android:text="电话号码"
+                    android:layout_weight="4"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/res20dp"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/res10dp"
+                    tools:ignore="RtlSymmetry,SpUsage" />
+
+                <TextView
+                    android:id="@+id/student_phone"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:layout_marginEnd="@dimen/res10dp"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"
+                    android:paddingStart="@dimen/res10dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/res60dp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/res10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/res60dp"
+                    android:text="班级"
+                    android:layout_weight="4"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/res20dp"
+                    android:background="@color/white"
+                    android:paddingStart="@dimen/res10dp"
+                    tools:ignore="RtlSymmetry,SpUsage" />
+
+                <TextView
+                    android:id="@+id/student_class"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="无"
+                    android:layout_marginEnd="@dimen/res10dp"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"
+                    android:paddingStart="@dimen/res10dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/quit_message"
+                android:layout_width="@dimen/res150dp"
+                android:layout_height="@dimen/res60dp"
+                android:gravity="center"
+                android:textSize="@dimen/res20dp"
+                android:layout_marginTop="@dimen/res20dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ic_switch_user"
+                android:layout_gravity="center_horizontal"
+                android:text="切换帐号"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

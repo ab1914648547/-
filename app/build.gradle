@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "org.develop.attendancesystem"
+        minSdk 28
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs/gson-2.0.jar')
+    implementation files('libs/TencentLocationSDK-v7.4.6-ra634eb34-20220328145711-release.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2'
+
+    implementation("com.squareup.okhttp3:okhttp:4.9.3") //OkHttp依赖
+
+    implementation 'com.alibaba:fastjson:1.1.71.android'//alibaba依赖
+
+//    implementation  'io.reactivex.rxjava2:rxjava:2.0.1'
+//    implementation  'io.reactivex.rxjava2:rxandroid:2.0.1'
+//    //rxpermission（配套rxjava使用的）
+//    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+//
+//    //单独使用使用下面的rxpermission（建议使用上面的rxjava+rxpermission）
+//    implementation 'com.github.tbruyelle:rxpermissions:0.12'
+
+
+}

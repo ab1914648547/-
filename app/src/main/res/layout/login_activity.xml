@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/beijin_student"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <org.develop.attendancesystem.utility.CircleImageView
+            android:id="@+id/System_logo"
+            android:layout_width="@dimen/res70dp"
+            android:layout_height="@dimen/res70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/res70dp"
+            android:layout_marginBottom="@dimen/res20dp"
+            android:src="@mipmap/ic_girl_icon_foreground" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name"
+            android:layout_width="@dimen/res250dp"
+            android:layout_height="@dimen/res50dp"
+            android:layout_below="@+id/System_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/res20dp"
+            android:layout_marginTop="@dimen/res20dp"
+            android:background="@drawable/edit_shape"
+            android:hint="请输入帐号"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/res20dp"
+            android:lines="1"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/res20dp"
+            android:singleLine="true" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_pass"
+            android:layout_width="@dimen/res250dp"
+            android:layout_height="@dimen/res50dp"
+            android:layout_below="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/res10dp"
+            android:layout_marginTop="@dimen/res20dp"
+            android:layout_marginEnd="@dimen/res10dp"
+            android:layout_marginBottom="@dimen/res10dp"
+            android:background="@drawable/edit_shape"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/res20dp"
+            android:paddingStart="@dimen/res20dp"
+            android:singleLine="true"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="@dimen/res200dp"
+            android:layout_height="@dimen/res50dp"
+            android:layout_below="@+id/user_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/res20dp"
+            android:background="@drawable/clock_btn_shape"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/res20dp"
+            android:text="登  录" />
+    </RelativeLayout>
+
+</ScrollView>
