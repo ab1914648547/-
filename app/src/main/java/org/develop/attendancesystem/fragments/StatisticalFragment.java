@@ -2,6 +2,7 @@ package org.develop.attendancesystem.fragments;
 
 import static android.content.Context.MODE_PRIVATE;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+import org.develop.attendancesystem.MainActivity;
 import org.develop.attendancesystem.R;
 import org.develop.attendancesystem.entity.MyInfoBean;
 import org.develop.attendancesystem.entity.Signinformation;
@@ -45,7 +47,7 @@ public class StatisticalFragment extends Fragment {
     private final static String TAG = "YL-StatisticalFragment";
     private CalendarView mCalendar;
     private ListView mListView;
-    private List<MyInfoBean> myInfoBeans;
+
 
 
     public static StatisticalFragment newInstance(){
@@ -56,12 +58,7 @@ public class StatisticalFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_statistical, container, false);
-
-
         initView(view);
-
-
-
         return view;
     }
 
@@ -70,8 +67,8 @@ public class StatisticalFragment extends Fragment {
         mListView = view.findViewById(R.id.statistical_list);
         new Thread(()->{
             mCalendar.setOnDateChangeListener((calendarView, year, month, dayOfMonth) -> {
-                myInfoBeans = new ArrayList<>();
-                disposeClickDate(year, month, dayOfMonth);
+
+                disposeClickDate(year, month+1, dayOfMonth);
             });
         }).start();
     }
@@ -81,14 +78,13 @@ public class StatisticalFragment extends Fragment {
         if (login_message != null){
             String studentId = login_message.getString("studentId", null);
             SignInfoService signService = new SignInfoServiceImpl(getActivity());
-            signService.selectSignInfoStudentId(studentId, signinformations -> {
+            signService.selectSignInfoStudentId(studentId, year, month, dayOfMonth, signinformations -> {
                 if (signinformations!=null){
-                    List<MyInfoBean> myInfoBeans2 = disposeInfoBeans(disposeSignData(signinformations, year, month, dayOfMonth));
-
-                    getActivity().runOnUiThread(() -> {
-                        StatisticalAdapter adapter = new StatisticalAdapter(myInfoBeans2, getActivity());
-                        mListView.setAdapter(adapter);
-                    });
+                    List<MyInfoBean> myInfoBeans = disposeSignData(signinformations);
+                    disposeInfoBeans(myInfoBeans);
+                }else {
+                    mListView.setAdapter(null);
+                    MainActivity.showToast(getActivity(),"数据为空！");
                 }
             });
 
@@ -97,52 +93,36 @@ public class StatisticalFragment extends Fragment {
 
     }
 
-    private List<MyInfoBean> disposeInfoBeans(List<MyInfoBean> myInfoBeans1) {
-        AtomicBoolean isOk = new AtomicBoolean(false);
-        for(int i = 0; i<myInfoBeans1.size(); i++){
+    private void disposeInfoBeans(List<MyInfoBean> myInfoBeans) {
+        List<MyInfoBean> infoBeans = new ArrayList<>();
+        for(MyInfoBean infoBean: myInfoBeans){
             CourseInfoService courseService = new CourseInfoServiceImpl(getActivity());
-            int finalI = i;
-            courseService.selectCourseInfoId(myInfoBeans1.get(i).getCourseName(), courseInformation -> {
-                myInfoBeans1.get(finalI).setCourseName(courseInformation.getCourseName());
-                isOk.set(true);
+            courseService.selectCourseInfoId(infoBean.getCourseName(), courseInformation -> {
+                infoBean.setCourseName(courseInformation.getCourseName());
+                infoBeans.add(infoBean);
             });
         }
         while (true){
-            if (isOk.get()){
-                return myInfoBeans1;
+            if (infoBeans.size() == myInfoBeans.size()){
+                Objects.requireNonNull(getActivity()).runOnUiThread(() -> {
+                    StatisticalAdapter adapter = new StatisticalAdapter(myInfoBeans, getActivity());
+                    mListView.setAdapter(adapter);
+                });
+                break;
             }
         }
     }
 
-    private List<MyInfoBean> disposeSignData(List<Signinformation> signinformations,int year, int month, int dayOfMonth) {
-        MyInfoBean myInfoBean = new MyInfoBean();
-        int day = year + month + dayOfMonth;
+    private List<MyInfoBean> disposeSignData(List<Signinformation> signinformations) {
+        List<MyInfoBean> myInfoBeans = new ArrayList<>();
         for (Signinformation signInfo: signinformations){
-            try {
-
-                DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-                Date parse = dateFormat.parse(signInfo.getSignTime());
-                Calendar calendar = Calendar.getInstance();
-                calendar.setTime(parse);
-                int getDay = calendar.get(Calendar.YEAR)
-                        + calendar.get(Calendar.MONTH)
-                        + calendar.get(Calendar.DAY_OF_MONTH);
-
-                Log.e(TAG, "disposeSignData: 时间1= "+year + month + dayOfMonth + " 时间2 = " + calendar.get(Calendar.YEAR)
-                        + calendar.get(Calendar.MONTH)
-                        + calendar.get(Calendar.DAY_OF_MONTH) );
-
-                if (day == getDay){
-                    myInfoBean.setCourseName(String.valueOf(signInfo.getCourseId()));
-                    myInfoBean.setClockTimeState(signInfo.getSignTime() + signInfo.getSignSite());
-                    if ("true".equals(signInfo.getState())){
-                        myInfoBean.setDelOrMod("删除");
-                    }else myInfoBean.setDelOrMod("修改");
-                    myInfoBeans.add(myInfoBean);
-                }
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
+            MyInfoBean myInfoBean = new MyInfoBean();
+            myInfoBean.setCourseName(String.valueOf(signInfo.getCourseId()));
+            myInfoBean.setClockTimeState(signInfo.getSignTime() + signInfo.getSignSite());
+            if ("true".equals(signInfo.getState())){
+                myInfoBean.setDelOrMod("删除");
+            }else {myInfoBean.setDelOrMod("修改");}
+            myInfoBeans.add(myInfoBean);
         }
         return myInfoBeans;
     }

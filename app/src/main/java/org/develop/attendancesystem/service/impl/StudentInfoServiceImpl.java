@@ -53,7 +53,8 @@ public class StudentInfoServiceImpl implements StudentInfoService {
                             @Override
                             public void onFailure(Call call, String errorMsg) {
                                 consumer.accept(null);
-                                MainActivity.showToast(mActivity, "网络错误！");
+                                Log.e(TAG, "onFailure: "+ errorMsg );
+                                MainActivity.showToast(mActivity, "服务器断掉了！");
                             }
                         });
         }).start();

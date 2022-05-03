@@ -57,27 +57,23 @@ public class LoginActivity extends AppCompatActivity {
 
         String userpass = mUserPass.getText().toString();
 
-        assert studentInformation != null;
-        String studentId = "" + studentInformation.getStudentId();
+        if (studentInformation != null){
+            String studentId = "" + studentInformation.getStudentId();
 
-        if (username.equals(studentId) && userpass.equals(studentInformation.getStudentPass())){
-            mPref = getSharedPreferences("login_message", MODE_PRIVATE);
-            SharedPreferences.Editor editor = mPref.edit();
+            if (username.equals(studentId) && userpass.equals(studentInformation.getStudentPass())){
+                mPref = getSharedPreferences("login_message", MODE_PRIVATE);
+                SharedPreferences.Editor editor = mPref.edit();
 
-            editor.putString("studentId", mUserName.getText().toString());
-            editor.putString("studentName",studentInformation.getStudentName());
-            editor.putString("studentClass",String.valueOf(studentInformation.getClassId()));
-            editor.putString("studentHome",studentInformation.getStudentHome());
-            editor.putString("studentPhone",studentInformation.getStudentPhone());
-            editor.apply();
-
-            finish();
-
-        }else {
-            MainActivity.showToast(this, "账号或密码错误！");
+                editor.putString("studentId", mUserName.getText().toString());
+                editor.putString("studentName",studentInformation.getStudentName());
+                editor.putString("studentClass",String.valueOf(studentInformation.getClassId()));
+                editor.putString("studentHome",studentInformation.getStudentHome());
+                editor.putString("studentPhone",studentInformation.getStudentPhone());
+                editor.apply();
+                finish();
+            }else {
+                MainActivity.showToast(this, "账号或密码错误！");
+            }
         }
-
     }
-
-
 }

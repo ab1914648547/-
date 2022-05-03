@@ -9,5 +9,5 @@ public interface SignInfoService {
 
     public void insertSignInfo(String id, String json);
 
-    public void selectSignInfoStudentId(String studentId, Consumer<List<Signinformation>> consumer);
+    public void selectSignInfoStudentId(String studentId, int year, int month, int day, Consumer<List<Signinformation>> consumer);
 }

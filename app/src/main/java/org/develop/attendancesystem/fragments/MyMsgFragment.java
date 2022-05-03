@@ -72,7 +72,6 @@ public class MyMsgFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (mIntent == null) {
-                    MainActivity.showToast(getActivity(), "网络错误！");
                     mIntent = new Intent(getActivity(), LoginActivity.class);
                 }
                 startActivity(mIntent);

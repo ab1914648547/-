@@ -58,17 +58,23 @@ public class SignInfoServiceImpl implements SignInfoService {
     }
 
     @Override
-    public void selectSignInfoStudentId(String studentId, Consumer<List<Signinformation>> consumer) {
+    public void selectSignInfoStudentId(String studentId, int year, int month, int day, Consumer<List<Signinformation>> consumer) {
         String url = mActivity.getString(R.string.getIP)
-                + mActivity.getString(R.string.selectSignInfoStudent)+studentId;
+                + mActivity.getString(R.string.selectSignInfoStudent);
         OkHttpUtils.builder().url(url)
-                .get()
+                .addParam("studentId",studentId)
+                .addParam("year", String.valueOf(year))
+                .addParam("month", String.valueOf(month))
+                .addParam("day", String.valueOf(day))
                 .addHeader("Content-Type", "application/json; charset=utf-8")
+                .get()
                 .async(new OkHttpUtils.ICallBack() {
                     @Override
                     public void onSuccessful(Call call, String data) {
-                        List<Signinformation> signinformations = JSONArray.parseArray(data, Signinformation.class);
-                        consumer.accept(signinformations);
+                        if (!"null".equals(data)){
+                            List<Signinformation> signinformations = JSONArray.parseArray(data, Signinformation.class);
+                            consumer.accept(signinformations);
+                        }else consumer.accept(null);
                     }
 
                     @Override

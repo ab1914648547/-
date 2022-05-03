@@ -104,6 +104,10 @@
         "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_my_icon_no.xml"
     },
     {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_student_beijin.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xxxhdpi/student_beijin.webp"
+    },
+    {
         "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/debug/layout_fragment_statistical.xml.flat",
         "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/fragment_statistical.xml"
     },
@@ -142,6 +146,10 @@
     {
         "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_girl_icon.png.flat",
         "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_girl_icon.png"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/debug/mipmap-hdpi_beijin_student.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-hdpi/beijin_student.webp"
     },
     {
         "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/debug/drawable_edit_shape.xml.flat",

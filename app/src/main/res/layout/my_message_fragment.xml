@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/grey"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="@dimen/res5dp"
+    android:background="@color/grey"
     android:layout_height="match_parent">
 
 
@@ -10,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="@dimen/res5dp"
         android:padding="@dimen/res10dp"
-        android:background="@color/white"
+        android:background="@drawable/body_shape"
         android:layout_height="@dimen/res150dp">
 
         <org.develop.attendancesystem.utility.CircleImageView
@@ -25,26 +27,29 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="@dimen/res10dp"
-            android:layout_toRightOf="@+id/user_icon">
+            android:layout_toEndOf="@+id/user_icon">
 
             <TextView
                 android:id="@+id/user_MyName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="login..."
+                android:text="请登录"
+                android:paddingStart="@dimen/res15dp"
                 android:gravity="center_vertical"
-                android:textSize="@dimen/res30dp"
+                android:textSize="@dimen/res20dp"
                 android:layout_weight="1"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,RtlSymmetry,SpUsage" />
 
             <TextView
                 android:id="@+id/user_note"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="note"
-                android:textSize="@dimen/res25dp"
-                android:textColor="@color/black"/>
+                android:paddingStart="@dimen/res15dp"
+                android:textSize="@dimen/res15dp"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry,SpUsage" />
 
         </LinearLayout>
 
@@ -53,9 +58,9 @@
             android:layout_width="@dimen/res20dp"
             android:layout_height="@dimen/res20dp"
             android:layout_centerVertical="true"
-            android:background="@drawable/ic_my_icon"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/res20dp"/>
+            android:background="@drawable/ic_right_join"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/res20dp"/>
 
     </RelativeLayout>
 
@@ -64,40 +69,39 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/user_msg"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/res50dp"
             android:layout_marginTop="@dimen/res10dp"
-            android:background="@color/white"
+            android:background="@drawable/body_shape"
             android:gravity="center_vertical"
-            android:paddingLeft="@dimen/res20dp"
+            android:paddingStart="@dimen/res20dp"
             android:text="未开发功能"
             android:textColor="@color/black"
-            android:textSize="@dimen/res20dp" />
+            android:textSize="@dimen/res20dp"
+            tools:ignore="HardcodedText,RtlSymmetry,SpUsage" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/res50dp"
             android:layout_marginTop="@dimen/res10dp"
-            android:background="@color/white"
-            android:gravity="center_vertical"
-            android:paddingLeft="@dimen/res20dp"
-            android:text="未开发功能"
-            android:textColor="@color/black"
-            android:textSize="@dimen/res20dp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/res50dp"
-            android:layout_marginTop="@dimen/res10dp"
-            android:background="@color/white"
+            android:background="@drawable/body_shape"
             android:gravity="center_vertical"
             android:paddingLeft="@dimen/res20dp"
             android:text="未开发功能"
             android:textColor="@color/black"
             android:textSize="@dimen/res20dp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/res50dp"
+            android:layout_marginTop="@dimen/res10dp"
+            android:background="@drawable/body_shape"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/res20dp"
+            android:text="未开发功能"
+            android:textColor="@color/black"
+            android:textSize="@dimen/res20dp" />
     </LinearLayout>
-
-
-
-
 </RelativeLayout>
