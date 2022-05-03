@@ -1,0 +1,105 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.develop.attendancesystem"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:6:5-67
+11-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:7:5-9:40
+12-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:8:9-65
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:10:5-79
+13-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:10:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:11:5-76
+14-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:11:22-73
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:12:5-75
+15-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:12:22-72
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:13:5-81
+16-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:13:22-78
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:14:5-79
+17-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:14:22-76
+18    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+18-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:15:5-89
+18-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:15:22-86
+19    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+19-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:16:5-18:60
+19-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:17:9-63
+20    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+20-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:19:5-76
+20-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:19:22-73
+21
+22    <application
+22-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:21:5-50:19
+23        android:allowBackup="true"
+23-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:22:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.3.1] /media/yl/杨林-移动硬盘/其他/QzsRecycleView_jb51/caches/transforms-3/0ffe1f38d4d5174a7c7d44b3c0291425/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
+25        android:extractNativeLibs="false"
+26        android:icon="@drawable/ic_clock"
+26-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:23:9-42
+27        android:label="@string/app_name"
+27-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:24:9-41
+28        android:roundIcon="@drawable/ic_clock"
+28-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:25:9-47
+29        android:supportsRtl="true"
+29-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:26:9-35
+30        android:theme="@style/Theme.AttendanceSystem"
+30-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:27:9-54
+31        android:usesCleartextTraffic="true" >
+31-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:28:9-44
+32        <activity
+32-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:29:9-31:40
+33            android:name="org.develop.attendancesystem.activitys.ApplyForActivity"
+33-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:30:13-55
+34            android:exported="false" />
+34-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:31:13-37
+35
+36        <meta-data
+36-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:33:9-35:67
+37            android:name="TencentMapSDK"
+37-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:34:13-41
+38            android:value="QYBBZ-IVXCW-6JDR6-REZVO-IHKFJ-VKF2J" />
+38-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:35:13-64
+39
+40        <activity
+40-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:37:9-39:40
+41            android:name="org.develop.attendancesystem.activitys.MessageActivity"
+41-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:38:13-54
+42            android:exported="false" />
+42-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:39:13-37
+43        <activity android:name="org.develop.attendancesystem.activitys.LoginActivity" />
+43-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:40:9-61
+43-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:40:19-58
+44        <activity
+44-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:41:9-49:20
+45            android:name="org.develop.attendancesystem.MainActivity"
+45-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:42:13-41
+46            android:exported="true" >
+46-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:43:13-36
+47            <intent-filter>
+47-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:44:13-48:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:45:17-69
+48-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:45:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:47:17-77
+50-->/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/AndroidManifest.xml:47:27-74
+51            </intent-filter>
+52        </activity>
+53    </application>
+54
+55</manifest>

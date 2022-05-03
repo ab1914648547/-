@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_clock_btn_shape_no.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/clock_btn_shape_no.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_selector_my_msg.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/selector_my_msg.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xhdpi_ic_boy_icon.png.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_boy_icon.png"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_login_activity.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/login_activity.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_activity_main.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_item_lists_layout.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/item_lists_layout.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_boy_icon_background.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_boy_icon_background.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_launcher_background.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_apply_icon.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_apply_icon.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_apply_shape.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/apply_shape.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_clock_icon_no.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_clock_icon_no.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_my_icon_no.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_my_icon_no.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_clock_icon.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_clock_icon.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_activity_apply_for.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/activity_apply_for.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_banner_shape.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/banner_shape.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xhdpi_ic_girl_icon_foreground.png.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_girl_icon_foreground.png"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_switch_user.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_switch_user.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_tabs_shape.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/tabs_shape.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_clock_btn_shape.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/clock_btn_shape.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_statistical_icon_no.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_statistical_icon_no.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xhdpi_ic_girl_icon.png.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_girl_icon.png"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_clock.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_edit_shape.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/edit_shape.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-hdpi_beijin_student.png.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-hdpi/beijin_student.png"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_statistical_icon.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_statistical_icon.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_fragment_statistical.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/fragment_statistical.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_activity_message.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/activity_message.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_my_message_fragment.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/my_message_fragment.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-anydpi-v26_ic_boy_icon.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-anydpi-v26/ic_boy_icon.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_selector_clock.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/selector_clock.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_my_icon.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_my_icon.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_ic_right_join.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/ic_right_join.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_body_shape.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/body_shape.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/drawable_selector_statistical.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/drawable/selector_statistical.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/layout_clock_page_fragment.xml.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/layout/clock_page_fragment.xml"
+    },
+    {
+        "merged": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/build/intermediates/merged_res/release/mipmap-xhdpi_ic_boy_icon_foreground.png.flat",
+        "source": "/media/yl/杨林-移动硬盘/毕业设计/AttendanceSystem/app/src/main/res/mipmap-xhdpi/ic_boy_icon_foreground.png"
+    }
+]
